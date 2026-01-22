@@ -14,7 +14,7 @@ from users.views import is_admin, AdminPermission
 
 
 @swagger_auto_schema(
-    method='get',
+    method='get' ,
     responses={200: openapi.Response('List of users with statistics')},
     tags=['Admin Dashboard'],
     security=[{'Bearer': []}]
